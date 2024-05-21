@@ -1,0 +1,21 @@
+<!-- display.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scraped Data</title>
+</head>
+<body>
+    <h1>Scraped Data</h1>
+    <ul>
+        {% for data in scraped_data %}
+            <li>
+                <strong>URL:</strong> {{ data.url }}<br>
+                <strong>HTML Content:</strong> {{ data.html_content }}
+            </li>
+            <br>
+        {% endfor %}
+    </ul>
+</body>
+</html>
